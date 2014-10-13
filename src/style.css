@@ -1,0 +1,98 @@
+/*
+ * Miscellaneous
+ */
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.no-select, .no-select * {
+  -webkit-user-select: none;  /* Webkit all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;
+}
+
+ul, ol {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*
+ * *, html, body
+ */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	border: none;
+	padding: none;
+}
+
+header {
+	height: 5%;
+}
+
+main {
+	height: 95%;
+}
+
+#list-container {
+	width: 50%;
+	height: 100%;
+}
+
+#list-container > div {
+	overflow: auto;
+}
+
+.contact-list-item {
+	padding: 2px;
+	margin: 4px;
+	border: 1px solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(250, 250, 250);
+	transition: background-color 0.2s, border-color 0.2s;
+	cursor: pointer;
+}
+
+.contact-list-item:hover {
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(235, 235, 235);
+}
+
+.contact-list-item-picture {
+	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 1px;
+	border: 1px dashed green;
+}
+
+.contact-list-item-fields {
+	float: left;
+}
+
+#contact-container {
+	width: 50%;
+	height: 100%;
+	border: 1px solid rgb(150, 50, 0);
+}
